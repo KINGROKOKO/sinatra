@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <% if @random_name %>
 <h1>My name is <%=@random_name%> </h1>
 <% else %>
@@ -6,7 +7,18 @@
 <input type="submit" value="Submit">
 </form>
 <% end %>
+=======
+
+>>>>>>> 84228eb61458c4b38dc4fca1cba104968fe3e6c3
 
 <div style='border: 3px dashed red'>
 <img src='http://bit.ly/1eze8aE'>
 </div>
+
+<% if @random_name %>
+<h1>My name is <%=@random_name%> </h1>
+<%else%>
+<form action="/named-cat">
+  <input type="text" name="name">
+  <input type="submit"></form>
+<% end %>
